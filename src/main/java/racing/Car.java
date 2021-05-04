@@ -23,7 +23,7 @@ public class Car {
         }
     }
 
-    public boolean isForward(int number) {
+    public static boolean isForward(int number) {
         return number >= FORWARD_MINIMUM_NUMBER;
     }
 
