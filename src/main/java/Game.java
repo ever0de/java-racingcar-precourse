@@ -38,7 +38,7 @@ public class Game {
     public void inputNameList() {
         System.out.println(INPUT_NAME_MESSAGE);
         String nameListString = scanner.nextLine();
-        for(String name: nameListString.split(SPLIT_REGEX)) {
+        for (String name : nameListString.split(SPLIT_REGEX)) {
             nameList.add(name);
         }
     }

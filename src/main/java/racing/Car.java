@@ -38,5 +38,4 @@ public class Car {
     private int generateRandomNumber() {
         return rand.nextInt(MAXIMUM_NUMBER);
     }
-
 }
