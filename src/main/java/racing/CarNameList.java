@@ -25,6 +25,10 @@ public class CarNameList {
         return cars;
     }
 
+    public List<String> getNameList() {
+        return nameList;
+    }
+
     private void checkDuplicateName() {
         Set<String> set = new HashSet<>(nameList);
         if (set.size() != nameList.size()) {

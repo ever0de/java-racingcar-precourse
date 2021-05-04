@@ -2,15 +2,13 @@ package winner;
 
 import racing.Car;
 import racing.CarList;
-
-import java.util.ArrayList;
-import java.util.List;
+import racing.CarNameList;
 
 public class Winner {
 
     private static final String WINNER_MESSAGE = "가 최종 우승했습니다.";
     private static final String DELIMITER = ",";
-    private final List<String> nameList = new ArrayList<>();
+    private final CarNameList nameList = new CarNameList();
     private final WinnerNumber number = new WinnerNumber();
 
     public void updateWinnerNumber(Car car) {
@@ -34,7 +32,7 @@ public class Winner {
         for (Car car : cars.getCars()) {
             addWinnerName(car);
         }
-        return String.join(DELIMITER, nameList);
+        return String.join(DELIMITER, nameList.getNameList());
     }
 
     public void printWinners(CarList cars) {
